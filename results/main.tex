@@ -36,6 +36,24 @@
 
 %\printbibliography
 
-\input{supplement.tex}
+\begin{appendix}
+    \renewcommand{\thefigure}{A\arabic{figure}}
+    \setcounter{figure}{0}
+    
+    \renewcommand{\thetable}{A\arabic{table}}
+    \setcounter{table}{0}
+    
+    \renewcommand{\theequation}{A\arabic{equation}}
+    \setcounter{equation}{0}
+
+    \renewcommand{\thesection}{\Alph{section}}
+
+%    \appendixwithtoc
+    \newpage
+
+    \input{supplement.tex}
+\end{appendix}
+
+\onehalfspacing
 
 \end{document}
